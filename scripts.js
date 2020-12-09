@@ -20,3 +20,8 @@ function loadAboutMe() {
   $("#aboutme").show();
   $("#content").hide();
 }
+function loadmaze() {
+  $("#aboutme").hide();
+  $("#content").show();
+  $("#content").load("maze.html");
+}
