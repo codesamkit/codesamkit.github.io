@@ -130,29 +130,19 @@ function drawGame() {
     }
   }
   if (hideSquare4 == false) {
-    moveTo(240, 230);
+    moveTo(square4X, square4Y);
     for (var i = 0; i < 4; i++) {
       drawLine(20);
       turnRight(90);
     }
   }
   if (hideSquare5 == false) {
-    moveTo(140, 230);
+    moveTo(square5X, square5Y);
     for (var i = 0; i < 4; i++) {
       drawLine(20);
       turnRight(90);
     }
   }
-  //Square 2
-  //Define variables for square2X, square2Y
-  //Define boolean to hide or draw the square
-  //Use the boolean inside if statement to either draw or not draw the square
-
-  //Square 3
-
-  //Square 4
-
-  //Square 5
 
   if (paddleX == square1X && paddleY == square1Y) {
     hideSquare1 = true;
