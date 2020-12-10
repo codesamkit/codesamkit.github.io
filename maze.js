@@ -18,6 +18,8 @@ var hideSquare3 = false;
 var hideSquare4 = false;
 var hideSquare5 = false;
 
+var counter = 0;
+
 onKeyUp = onKeyDown = onKeyRight = onKeyLeft = doNothing;
 function doNothing() {}
 
@@ -54,7 +56,7 @@ $(document).keydown(function(e) {
   }
 });
 
-window.setInterval(drawGame, 1);
+var timer = window.setInterval(drawGame, 1);
 
 function drawRight() {
   paddleX = paddleX + 5;
@@ -71,7 +73,11 @@ function drawDown() {
 
 function drawGame() {
   clearCanvas();
+
   drawFilledRectangle(paddleX, paddleY, 20, 20);
+  moveTo(150, 50);
+  printTextAtXY(counter++ / 100);
+  if (counter == 1000) clearInterval(timer);
 
   // for (var i = 0; i < 4; i++) {
   //   drawLine(300);
