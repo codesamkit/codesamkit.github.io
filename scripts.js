@@ -1,7 +1,7 @@
 function loadFlags() {
   $("#aboutme").hide();
   $("#content").show();
-  $("#content").load("flag.html");
+  $("#content").load("flags/flag.html");
 }
 
 function loadPyramid() {
@@ -20,8 +20,19 @@ function loadAboutMe() {
   $("#aboutme").show();
   $("#content").hide();
 }
-function loadmaze() {
+function loadMaze() {
   $("#aboutme").hide();
   $("#content").show();
-  $("#content").load("maze.html");
+  $("#content").load("games/maze.html");
+}
+function loadEmoji() {
+  $("#aboutme").hide();
+  $("#content").show();
+  $("#content").load("emoji.html");
+}
+
+function loadMyFlag() {
+  $("#aboutme").hide();
+  $("#content").show();
+  $("#content").load("myflag.html");
 }
