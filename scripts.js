@@ -36,3 +36,8 @@ function loadMyFlag() {
   $("#content").show();
   $("#content").load("myflag.html");
 }
+function loadFreindFlag() {
+  $("#aboutme").hide();
+  $("#content").show();
+  $("#content").load("myflag.html");
+}
