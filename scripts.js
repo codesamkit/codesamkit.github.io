@@ -34,10 +34,10 @@ function loadEmoji() {
 function loadMyFlag() {
   $("#aboutme").hide();
   $("#content").show();
-  $("#content").load("myflag.html");
+  $("#content").load("flags/myflag.html");
 }
 function loadFreindFlag() {
   $("#aboutme").hide();
   $("#content").show();
-  $("#content").load("myflag.html");
+  $("#content").load("flags/friends-flag.html");
 }
