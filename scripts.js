@@ -36,7 +36,7 @@ function loadMyFlag() {
   $("#content").show();
   $("#content").load("flags/myflag.html");
 }
-function loadFreindFlag() {
+function loadFriendsFlag() {
   $("#aboutme").hide();
   $("#content").show();
   $("#content").load("flags/friends-flag.html");
