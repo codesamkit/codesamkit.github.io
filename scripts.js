@@ -1,6 +1,6 @@
 function loadFlags() {
-  $("#aboutme").hide();
-  $("#content").show();
+  // $("#aboutme").hide();
+  // $("#content").show();
   $("#content").load("flags/flag.html");
 }
 
