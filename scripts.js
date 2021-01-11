@@ -41,3 +41,8 @@ function loadFriendsFlag() {
   $("#content").show();
   $("#content").load("flags/friends-flag.html");
 }
+function loadChessBoard() {
+  $("#aboutme").hide();
+  $("#content").show();
+  $("#content").load("games/chess/chess-board.html");
+}
