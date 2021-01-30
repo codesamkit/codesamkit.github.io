@@ -28,6 +28,7 @@ $(document).keydown(function (e) {
     drawLeft();
     return true;
   }
+});
 
 var timer = window.setInterval(drawGame, 1);
 
@@ -96,6 +97,6 @@ function drawLeft() {
 function drawDown() {
   paddleX = paddleX + 5;
 }
-function drawUp(){
+function drawUp() {
   paddleX = paddleX + 5;
 }

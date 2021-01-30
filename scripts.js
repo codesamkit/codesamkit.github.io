@@ -46,3 +46,8 @@ function loadChessBoard() {
   $("#content").show();
   $("#content").load("games/chess/chess-board.html");
 }
+function loadImperialStarship() {
+  $("#aboutme").hide();
+  $("#content").show();
+  $("#content").load("starwars/imperial-starship.html");
+}
