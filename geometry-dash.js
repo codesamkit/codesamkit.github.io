@@ -1,3 +1,4 @@
+clearCanvas();
 drawCanvas(900, 900);
 
 var triangleX = [50, 200, 400, 600, 800];

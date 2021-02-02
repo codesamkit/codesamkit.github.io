@@ -1,20 +1,20 @@
-from turtle import *
-color('blue', 'green')
-begin_fill()
-while True:
-    forward(90)
-    left(60)
-    if abs(pos()) < 1:
-        break
-end_fill()
-color('blue', 'yellow')
-begin_fill()
-while True:
-    forward(90)
-    right(60)
-    if abs(pos()) < 1:
-        break
-end_fill()
+# from turtle import *
+# color('blue', 'green')
+# begin_fill()
+# while True:
+#     forward(90)
+#     left(60)
+#     if abs(pos()) < 1:
+#         break
+# end_fill()
+# color('blue', 'yellow')
+# begin_fill()
+# while True:
+#     forward(90)
+#     right(60)
+#     if abs(pos()) < 1:
+#         break
+# end_fill()
 
 # import turtle
 # s = turtle.getscreen()
@@ -40,6 +40,18 @@ end_fill()
 # end_fill()
 # done()
     
+
+from turtle import *
+color('blue', 'green')
+begin_fill()
+while True:
+    forward(200)
+    left(80)
+    if abs(pos()) < 1:
+        break
+end_fill()
+done()
+
 # from turtle import *
 # color('yellow', 'red')
 # count = 0

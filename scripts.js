@@ -51,3 +51,8 @@ function loadImperialStarship() {
   $("#content").show();
   $("#content").load("starwars/imperial-starship.html");
 }
+function loadBiographys() {
+  $("#aboutme").hide();
+  $("#content").show();
+  $("#content").load("biography's/biography's.html");
+}

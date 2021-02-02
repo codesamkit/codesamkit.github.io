@@ -1,3 +1,4 @@
+clearCanvas();
 drawCanvas(450, 450);
 
 //Normal emoji

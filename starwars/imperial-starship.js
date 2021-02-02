@@ -1,3 +1,4 @@
+clearCanvas();
 drawCanvas(460, 460);
 
 moveTo(100, 200);

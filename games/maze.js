@@ -1,3 +1,4 @@
+clearCanvas();
 drawCanvas(400, 400);
 
 var paddleX = 50;
