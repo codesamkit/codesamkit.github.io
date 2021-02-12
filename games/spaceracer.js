@@ -28,6 +28,7 @@ $(document).keydown(function (e) {
     drawLeft();
     return true;
   }
+}
 
 var timer = window.setInterval(drawGame, 1);
 
