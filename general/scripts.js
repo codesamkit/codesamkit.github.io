@@ -56,3 +56,8 @@ function loadBiographys() {
   $("#content").show();
   $("#content").load("biography's/biography's.html");
 }
+function loadPython() {
+  $("#aboutme").hide();
+  $("#content").show();
+  $("#content").load("python/python.html");
+}

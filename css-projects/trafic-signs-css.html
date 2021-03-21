@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trafic signs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <style type="text/css" media="all">
+      /* Speed Limit sign */
+      .speed-limit {
+        width: 200px;
+        height: 275px;
+        background-color: white;
+        border: double;
+        font-size: 50px;
+        border-radius: 5px;
+      }
+      .number {
+        font-size: 80px;
+      }
+      .be-alert-for-bears {
+        width: 200px;
+        height: 300px;
+        background-color: white;
+        border: double;
+        font-size: 50px;
+        border-radius: 5px;
+      }
+      .exit-sign {
+        width: 400px;
+        height: 200px;
+        background-color: green;
+        font-size: 40px;
+        border-color: white;
+        border-width: 10px;
+      }
+      .exit-number {
+        width: 50px;
+        height: 30px;
+        background-color: green;
+      }
+      .all-way {
+        width: 200px;
+        background-color: red;
+        border: white solid;
+        border-radius: 5px;
+        font-size: 30px;
+      }
+      .wrong-way {
+        width: 200px;
+        background-color: red;
+        border: white solid;
+        border-radius: 5px;
+        font-size: 30px;
+      }
+      .emergency-parking-only {
+        width: 200px;
+        background-color: red;
+        border: white solid;
+        border-radius: 5px;
+        font-size: 30px;
+      }
+      .no-turns {
+        width: 200px;
+        background-color: red;
+        border: white solid;
+        border-radius: 5px;
+        font-size: 30px;
+      }
+      .slow {
+        width: 200px;
+        background-color: red;
+        border: white solid;
+        border-radius: 5px;
+        font-size: 30px;
+      }
+      .gravel {
+        width: 200px;
+        background-color: yellow;
+        border: black solid;
+        border-radius: 5px;
+        font-size: 30px;
+      }
+      .road-closed {
+        width: 200px;
+        background-color: yellow;
+        font-size: 30px;
+      }
+      .caution-wfv {
+        width: 150px;
+        border: double black;
+        border-radius: 5px;
+      }
+      .font-caution-wfv {
+        font-size: 25px;
+      }
+      .caution {
+        width: 200px;
+        border: black solid;
+        border-radius: 5px;
+        font-size: 30px;
+      }
+      .font-caution {
+        font-size: 25px;
+      }
+      .exits {
+        /* width: 300px; */
+        border: 5px solid white;
+        border-radius: 5px;
+        background-color: green;
+        font-size: 30px;
+      }
+      .exits-number {
+        border-top: 5px solid white;
+        border-right: 5px solid white;
+        border-left: 5px solid white;
+        background-color: green;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body class="bg-info">
+    <section>
+      <div class="speed-limit">
+        <div class="text-speedlimit text-center">SPEED LIMIT</div>
+        <div class="number text-center">50</div>
+      </div>
+    </section>
+    <section class="mt-3">
+      <div class="be-alert-for-bears">
+        <div class="text-speedlimit text-center">BE ALERT FOR BEARS</div>
+      </div>
+    </section>
+    <section class="mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-9"></div>
+          <div class="col-3 exits-number p-2 border-light text-white text-right font-weight-bold">Exit 59</div>
+        </div>
+        <div class="row exits p-2 border-light text-white font-weight-bold">
+          <div class="col-9">Ray Road</div>
+          <div class="col-3 text-right">3</div>
+          <div class="col-9">Warner Road</div>
+          <div class="col-3 text-right">4</div>
+          <div class="col-9">Eliott Road</div>
+          <div class="col-3 text-right">5</div>
+          <div class="col-9">Guadalupe Road</div>
+          <div class="col-3 text-right">6</div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-3">
+      <div class="container">
+        <div class="row p-3">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="all-way text-white text-center p-2">ALL WAY</div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-3">
+      <div class="container">
+        <div class="row p-3">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="wrong-way text-white text-center p-2">WRONG WAY</div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-3">
+      <div class="container">
+        <div class="row p-3">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="emergency-parking-only text-white text-center p-2">EMERGENCY PARKIING ONLY</div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-3">
+      <div class="container">
+        <div class="row p-3">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="no-turns text-white text-center p-2">NO TURNS</div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-3">
+      <div class="container">
+        <div class="row p-3">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="gravel text-black text-center p-2">GRAVEL</div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-3">
+      <div class="container">
+        <div class="row p-3">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="road-closed text-black text-center p-2">ROAD CLOSED</div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-3">
+      <div class="container">
+        <div class="row p-3">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="slow text-white text-center p-2">SLOW</div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-3">
+      <div class="container">
+        <div class="row text-center border-success pt-2 pb-2">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="caution-wfv bg-warning border-dark border-5 text-center">
+              <div class="bg-dark text-white pb-1 font-caution">CAUTION</div>
+              <div class="font-caution-wfv">WATCH</div>
+              <div class="font-caution-wfv">FOR</div>
+              <div class="font-caution-wfv">VEHICLES</div>
+            </div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-3">
+      <div class="container">
+        <div class="row text-center border-success pt-2 pb-2">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="caution- bg-warning border-dark border-5 text-center">
+              <div class="bg-dark text-white pb-1 font-caution">CAUTION</div>
+              <div class="font-caution">SLOW</div>
+              <div class="font-caution">DOWN</div>
+            </div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -12,17 +12,27 @@ turtle.speed(0)
 #         turtle.left(10)
 # turtle.hideturtle()
 
-# from turtle import *
-# turtle.bgcolor("black")
-# turtle.color("turquoise")
-# turtle.pensize(5)
-# for i in range(8):
-#     turtle.left(45)
-#     for i in range(8):
-#         turtle.forward(100)
-#         turtle.left(45)
-# turtle.hideturtle()
-        
+from turtle import *
+turtle.bgcolor("black")
+turtle.color("turquoise")
+turtle.pensize(7)
+for i in range(7):
+    turtle.left(45)
+    for i in range(7):
+        turtle.forward(100)
+        turtle.left(90)
+for i in range(8):
+    turtle.left(45)
+    for i in range(8):
+        turtle.forward(100)
+        turtle.left(45)
+for i in range(7):
+    turtle.right(45)
+    for i in range(7):
+        turtle.forward(100)
+        turtle.right(90)
+turtle.hideturtle()
+
 # from turtle import *
 # turtle.setx(0)
 # turtle.setx(0)
@@ -56,7 +66,8 @@ turtle.speed(0)
 #     for i in range (360):
 #         turtle.forward(i)
 #         turtle.left(var1)
-# crazy(110)    
+# crazy(110) 
+# turtle.hideturtle()   
 
 # import random
 # turtle.bgcolor("black")
