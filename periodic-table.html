@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic Table</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <style>
+      .box {
+        width: 50px;
+        height: 50px;
+        background-color: rgba(187, 187, 192, 0.842);
+        border: 3px;
+        border-color: rgb(134, 66, 27) solid;
+      }
+      .element-name {
+        font-size: 5px;
+      }
+      .element-symbol {
+        font-size: 12px;
+      }
+      .atomic-number {
+        font-size: 8px;
+        padding-left: 5px;
+      }
+      .atomic-mass {
+        font-size: 10px;
+      }
+      .empty-box {
+        width: 50px;
+        height: 50px;
+      }
+      .non-metal {
+        background-color: yellowgreen;
+      }
+      .alkali-metal {
+        background-color: yellow;
+      }
+      .alkali-metal-earth {
+        background-color: rgb(179, 88, 179);
+      }
+      .noble-gas {
+        background-color: turquoise;
+      }
+      .transition-metal {
+        background-color: skyblue;
+      }
+      .post-transition-metal {
+        background-color: rgb(80, 189, 147);
+      }
+      .semi-metal {
+        background-color: lightsalmon;
+      }
+      .halogen {
+        background-color: rgb(187, 161, 161);
+      }
+      .lanthanoid {
+        background-color: burlywood;
+      }
+      .actonoid {
+        background-color: rgb(199, 199, 95);
+      }
+    </style>
+  </head>
+  <body class="bg-dark">
+    <h1 class="text-center text-white">Periodic Table of Elements</h1>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="box non-metal">
+            <div class="atomic-number">1</div>
+            <div class="text-center element-symbol">H</div>
+            <div class="element-name text-center">Hydrogen</div>
+            <div class="atomic-mass text-center">1.000794</div>
+          </div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="box noble-gas">
+            <div class="atomic-number">2</div>
+            <div class="text-center element-symbol">He</div>
+            <div class="element-name text-center">Helium</div>
+            <div class="atomic-mass text-center">4.003</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box alkali-metal">
+            <div class="atomic-number">3</div>
+            <div class="text-center element-symbol">Li</div>
+            <div class="element-name text-center">Lithium</div>
+            <div class="atomic-mass text-center">6.941</div>
+          </div>
+          <div class="box alkali-metal-earth">
+            <div class="atomic-number">4</div>
+            <div class="text-center element-symbol">Be</div>
+            <div class="element-name text-center">Berelium</div>
+            <div class="atomic-mass text-center">9.012182</div>
+          </div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="box semi-metal">
+            <div class="atomic-number">5</div>
+            <div class="text-center element-symbol">B</div>
+            <div class="element-name text-center">Boron</div>
+            <div class="atomic-mass text-center">10.811</div>
+          </div>
+          <div class="box non-metal">
+            <div class="atomic-number">6</div>
+            <div class="text-center element-symbol">C</div>
+            <div class="element-name text-center">Carbon</div>
+            <div class="atomic-mass text-center">12.011</div>
+          </div>
+          <div class="box non-metal">
+            <div class="atomic-number">7</div>
+            <div class="text-center element-symbol">N</div>
+            <div class="element-name text-center">Nitrogen</div>
+            <div class="atomic-mass text-center">14.007</div>
+          </div>
+          <div class="box non-metal">
+            <div class="atomic-number">8</div>
+            <div class="text-center element-symbol">O</div>
+            <div class="element-name text-center">Oxygen</div>
+            <div class="atomic-mass text-center">15.999</div>
+          </div>
+          <div class="box halogen">
+            <div class="atomic-number">9</div>
+            <div class="text-center element-symbol">F</div>
+            <div class="element-name text-center">Florine</div>
+            <div class="atomic-mass text-center">18.998</div>
+          </div>
+          <div class="box noble-gas">
+            <div class="atomic-number">10</div>
+            <div class="text-center element-symbol">Ne</div>
+            <div class="element-name text-center">Neon</div>
+            <div class="atomic-mass text-center">20.1797</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box alkali-metal">
+            <div class="atomic-number">11</div>
+            <div class="text-center element-symbol">Na</div>
+            <div class="element-name text-center">Sodium</div>
+            <div class="atomic-mass text-center">22.990</div>
+          </div>
+          <div class="box alkali-metal-earth">
+            <div class="atomic-number">12</div>
+            <div class="text-center element-symbol">Mg</div>
+            <div class="element-name text-center">Magnesium</div>
+            <div class="atomic-mass text-center">24.305</div>
+          </div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="empty-box"></div>
+          <div class="box post-transition-metal">
+            <div class="atomic-number">13</div>
+            <div class="text-center element-symbol">Al</div>
+            <div class="element-name text-center">Aluminum</div>
+            <div class="atomic-mass text-center">26.982</div>
+          </div>
+          <div class="box semi-metal">
+            <div class="atomic-number">14</div>
+            <div class="text-center element-symbol">Si</div>
+            <div class="element-name text-center">Silicon</div>
+            <div class="atomic-mass text-center">28.086</div>
+          </div>
+          <div class="box non-metal">
+            <div class="atomic-number">15</div>
+            <div class="text-center element-symbol">P</div>
+            <div class="element-name text-center">Phosphourus</div>
+            <div class="atomic-mass text-center">30.978</div>
+          </div>
+          <div class="box non-metal">
+            <div class="atomic-number">16</div>
+            <div class="text-center element-symbol">S</div>
+            <div class="element-name text-center">Sulfur</div>
+            <div class="atomic-mass text-center">32.066</div>
+          </div>
+          <div class="box halogen">
+            <div class="atomic-number">17</div>
+            <div class="text-center element-symbol">Cl</div>
+            <div class="element-name text-center">Clorine</div>
+            <div class="atomic-mass text-center">35.453</div>
+          </div>
+          <div class="box noble-gas">
+            <div class="atomic-number">18</div>
+            <div class="text-center element-symbol">Ar</div>
+            <div class="element-name text-center">Argon</div>
+            <div class="atomic-mass text-center">39.948</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box alkali-metal">
+            <div class="atomic-number">19</div>
+            <div class="text-center element-symbol">K</div>
+            <div class="element-name text-center">Potassium</div>
+            <div class="atomic-mass text-center">39.098</div>
+          </div>
+          <div class="box alkali-metal-earth">
+            <div class="atomic-number">20</div>
+            <div class="text-center element-symbol">Ca</div>
+            <div class="element-name text-center">Calcium</div>
+            <div class="atomic-mass text-center">40.078</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">21</div>
+            <div class="text-center element-symbol">Sc</div>
+            <div class="element-name text-center">Scandium</div>
+            <div class="atomic-mass text-center">44.956</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">22</div>
+            <div class="text-center element-symbol">Ti</div>
+            <div class="element-name text-center">Titanium</div>
+            <div class="atomic-mass text-center">47.876</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">23</div>
+            <div class="text-center element-symbol">V</div>
+            <div class="element-name text-center">Vandium</div>
+            <div class="atomic-mass text-center">50.942</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">24</div>
+            <div class="text-center element-symbol">Cr</div>
+            <div class="element-name text-center">Chromium</div>
+            <div class="atomic-mass text-center">50.996</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">25</div>
+            <div class="text-center element-symbol">Mn</div>
+            <div class="element-name text-center">Maganese</div>
+            <div class="atomic-mass text-center">54.938</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">26</div>
+            <div class="text-center element-symbol">Fe</div>
+            <div class="element-name text-center">Iron</div>
+            <div class="atomic-mass text-center">55.845</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">27</div>
+            <div class="text-center element-symbol">Co</div>
+            <div class="element-name text-center">Cobalt</div>
+            <div class="atomic-mass text-center">55.933</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">28</div>
+            <div class="text-center element-symbol">Ni</div>
+            <div class="element-name text-center">Nickel</div>
+            <div class="atomic-mass text-center">58.693</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">29</div>
+            <div class="text-center element-symbol">Cu</div>
+            <div class="element-name text-center">Copper</div>
+            <div class="atomic-mass text-center">63.546</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">30</div>
+            <div class="text-center element-symbol">Zn</div>
+            <div class="element-name text-center">Zinc</div>
+            <div class="atomic-mass text-center">65.382</div>
+          </div>
+          <div class="box post-transition-metal">
+            <div class="atomic-number">31</div>
+            <div class="text-center element-symbol">Ga</div>
+            <div class="element-name text-center">Gallium</div>
+            <div class="atomic-mass text-center">22.990</div>
+          </div>
+          <div class="box semi-metal">
+            <div class="atomic-number">32</div>
+            <div class="text-center element-symbol">Ge</div>
+            <div class="element-name text-center">Germanium</div>
+            <div class="atomic-mass text-center">72.640</div>
+          </div>
+          <div class="box semi-metal">
+            <div class="atomic-number">33</div>
+            <div class="text-center element-symbol">As</div>
+            <div class="element-name text-center">Arseneic</div>
+            <div class="atomic-mass text-center">74.922</div>
+          </div>
+          <div class="box non-metal">
+            <div class="atomic-number">34</div>
+            <div class="text-center element-symbol">Se</div>
+            <div class="element-name text-center">Selenium</div>
+            <div class="atomic-mass text-center">78.971</div>
+          </div>
+          <div class="box halogen">
+            <div class="atomic-number">35</div>
+            <div class="text-center element-symbol">Br</div>
+            <div class="element-name text-center">Bromine</div>
+            <div class="atomic-mass text-center">79.904</div>
+          </div>
+          <div class="box noble-gas">
+            <div class="atomic-number">36</div>
+            <div class="text-center element-symbol">Kr</div>
+            <div class="element-name text-center">Krypton</div>
+            <div class="atomic-mass text-center">83.796</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box alkali-metal">
+            <div class="atomic-number">37</div>
+            <div class="text-center element-symbol">Rb</div>
+            <div class="element-name text-center">Rubidium</div>
+            <div class="atomic-mass text-center">85.468</div>
+          </div>
+          <div class="box alkali-metal-earth">
+            <div class="atomic-number">38</div>
+            <div class="text-center element-symbol">Sr</div>
+            <div class="element-name text-center">Strondium</div>
+            <div class="atomic-mass text-center">87.620</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">39</div>
+            <div class="text-center element-symbol">Y</div>
+            <div class="element-name text-center">Yttrium</div>
+            <div class="atomic-mass text-center">88.906</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">40</div>
+            <div class="text-center element-symbol">Zr</div>
+            <div class="element-name text-center">Zirconium</div>
+            <div class="atomic-mass text-center">91.224</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">41</div>
+            <div class="text-center element-symbol">Nb</div>
+            <div class="element-name text-center">Niobuim</div>
+            <div class="atomic-mass text-center">92.906</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">42</div>
+            <div class="text-center element-symbol">Mo</div>
+            <div class="element-name text-center">Molybdenum</div>
+            <div class="atomic-mass text-center">95.951</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">43</div>
+            <div class="text-center element-symbol">Tc</div>
+            <div class="element-name text-center">Technetium</div>
+            <div class="atomic-mass text-center">97.907</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">44</div>
+            <div class="text-center element-symbol">Ru</div>
+            <div class="element-name text-center">Ruthenium</div>
+            <div class="atomic-mass text-center">101.072</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">45</div>
+            <div class="text-center element-symbol">Rh</div>
+            <div class="element-name text-center">Rhodium</div>
+            <div class="atomic-mass text-center">102.906</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">46</div>
+            <div class="text-center element-symbol">Pd</div>
+            <div class="element-name text-center">Palladium</div>
+            <div class="atomic-mass text-center">106.421</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">47</div>
+            <div class="text-center element-symbol">Ag</div>
+            <div class="element-name text-center">Silver</div>
+            <div class="atomic-mass text-center">107.868</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">48</div>
+            <div class="text-center element-symbol">Cd</div>
+            <div class="element-name text-center">Cadmium</div>
+            <div class="atomic-mass text-center">112.414</div>
+          </div>
+          <div class="box post-transition-metal">
+            <div class="atomic-number">49</div>
+            <div class="text-center element-symbol">In</div>
+            <div class="element-name text-center">Indium</div>
+            <div class="atomic-mass text-center">114.818</div>
+          </div>
+          <div class="box post-transition-metal">
+            <div class="atomic-number">50</div>
+            <div class="text-center element-symbol">Sn</div>
+            <div class="element-name text-center">Tin</div>
+            <div class="atomic-mass text-center">118.711</div>
+          </div>
+          <div class="box semi-metal">
+            <div class="atomic-number">51</div>
+            <div class="text-center element-symbol">Sb</div>
+            <div class="element-name text-center">Anitimony</div>
+            <div class="atomic-mass text-center">121.760</div>
+          </div>
+          <div class="box semi-metal">
+            <div class="atomic-number">52</div>
+            <div class="text-center element-symbol">Te</div>
+            <div class="element-name text-center">Tellerium</div>
+            <div class="atomic-mass text-center">127.603</div>
+          </div>
+          <div class="box halogen">
+            <div class="atomic-number">53</div>
+            <div class="text-center element-symbol">I</div>
+            <div class="element-name text-center">Iodine</div>
+            <div class="atomic-mass text-center">126.904</div>
+          </div>
+          <div class="box noble-gas">
+            <div class="atomic-number">54</div>
+            <div class="text-center element-symbol">Xe</div>
+            <div class="element-name text-center">Xenon</div>
+            <div class="atomic-mass text-center">131.294</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box alkali-metal">
+            <div class="atomic-number">55</div>
+            <div class="text-center element-symbol">Cs</div>
+            <div class="element-name text-center">Caesium</div>
+            <div class="atomic-mass text-center">132.905</div>
+          </div>
+          <div class="box alkali-metal-earth">
+            <div class="atomic-number">56</div>
+            <div class="text-center element-symbol">Ba</div>
+            <div class="element-name text-center">Barium</div>
+            <div class="atomic-mass text-center">137.327</div>
+          </div>
+          <div class="box lanthanoid">
+            <div class="atomic-number">57-71</div>
+            <div class="text-center element-symbol"></div>
+            <div class="element-name text-center"></div>
+            <div class="atomic-mass text-center"></div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">72</div>
+            <div class="text-center element-symbol">Hf</div>
+            <div class="element-name text-center">Hafnuim</div>
+            <div class="atomic-mass text-center">178.492</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">73</div>
+            <div class="text-center element-symbol">Ta</div>
+            <div class="element-name text-center">Tantalum</div>
+            <div class="atomic-mass text-center">180.948</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">74</div>
+            <div class="text-center element-symbol">W</div>
+            <div class="element-name text-center">Tungsten</div>
+            <div class="atomic-mass text-center">183.841</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">75</div>
+            <div class="text-center element-symbol">Re</div>
+            <div class="element-name text-center">Rhenuim</div>
+            <div class="atomic-mass text-center">186.207</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">76</div>
+            <div class="text-center element-symbol">Os</div>
+            <div class="element-name text-center">Osmuim</div>
+            <div class="atomic-mass text-center">190.233</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">77</div>
+            <div class="text-center element-symbol">Ir</div>
+            <div class="element-name text-center">Iridium</div>
+            <div class="atomic-mass text-center">193.217</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">78</div>
+            <div class="text-center element-symbol">Pt</div>
+            <div class="element-name text-center">Platinum</div>
+            <div class="atomic-mass text-center">195.084</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">79</div>
+            <div class="text-center element-symbol">Au</div>
+            <div class="element-name text-center">Gold</div>
+            <div class="atomic-mass text-center">196.967</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">80</div>
+            <div class="text-center element-symbol">Hg</div>
+            <div class="element-name text-center">Mercury</div>
+            <div class="atomic-mass text-center">200.592</div>
+          </div>
+          <div class="box post-transition-metal">
+            <div class="atomic-number">81</div>
+            <div class="text-center element-symbol">Tl</div>
+            <div class="element-name text-center">Thallium</div>
+            <div class="atomic-mass text-center">204.383</div>
+          </div>
+          <div class="box post-transition-metal">
+            <div class="atomic-number">82</div>
+            <div class="text-center element-symbol">Pb</div>
+            <div class="element-name text-center">Lead</div>
+            <div class="atomic-mass text-center">207.210</div>
+          </div>
+          <div class="box post-transition-metal">
+            <div class="atomic-number">83</div>
+            <div class="text-center element-symbol">Bi</div>
+            <div class="element-name text-center">Bismuth</div>
+            <div class="atomic-mass text-center">208.980</div>
+          </div>
+          <div class="box semi-metal">
+            <div class="atomic-number">84</div>
+            <div class="text-center element-symbol">Po</div>
+            <div class="element-name text-center">Polonium</div>
+            <div class="atomic-mass text-center">208.982</div>
+          </div>
+          <div class="box halogen">
+            <div class="atomic-number">85</div>
+            <div class="text-center element-symbol">At</div>
+            <div class="element-name text-center">Astain</div>
+            <div class="atomic-mass text-center">209.987</div>
+          </div>
+          <div class="box noble-gas">
+            <div class="atomic-number">86</div>
+            <div class="text-center element-symbol">Rn</div>
+            <div class="element-name text-center">Radon</div>
+            <div class="atomic-mass text-center">222.018</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box alkali-metal">
+            <div class="atomic-number">87</div>
+            <div class="text-center element-symbol">Fr</div>
+            <div class="element-name text-center">Francium</div>
+            <div class="atomic-mass text-center">223.020</div>
+          </div>
+          <div class="box alkali-metal-earth">
+            <div class="atomic-number">88</div>
+            <div class="text-center element-symbol">Ra</div>
+            <div class="element-name text-center">Radium</div>
+            <div class="atomic-mass text-center">226.025</div>
+          </div>
+          <div class="box actonoid">
+            <div class="atomic-number">89-103</div>
+            <div class="text-center element-symbol"></div>
+            <div class="element-name text-center"></div>
+            <div class="atomic-mass text-center"></div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">104</div>
+            <div class="text-center element-symbol">Rf</div>
+            <div class="element-name text-center">Rutherfordium</div>
+            <div class="atomic-mass text-center">261</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">105</div>
+            <div class="text-center element-symbol">Db</div>
+            <div class="element-name text-center">Dubnium</div>
+            <div class="atomic-mass text-center">262</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">106</div>
+            <div class="text-center element-symbol">Sg</div>
+            <div class="element-name text-center">Seaborgium</div>
+            <div class="atomic-mass text-center">266</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">107</div>
+            <div class="text-center element-symbol">Bh</div>
+            <div class="element-name text-center">Bohrium</div>
+            <div class="atomic-mass text-center">264</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">108</div>
+            <div class="text-center element-symbol">Hs</div>
+            <div class="element-name text-center">Hassium</div>
+            <div class="atomic-mass text-center">277</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">109</div>
+            <div class="text-center element-symbol">Mt</div>
+            <div class="element-name text-center">Meitnerium</div>
+            <div class="atomic-mass text-center">268</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">110</div>
+            <div class="text-center element-symbol">Ds</div>
+            <div class="element-name text-center">Darmstadium</div>
+            <div class="atomic-mass text-center">281</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">111</div>
+            <div class="text-center element-symbol">Rg</div>
+            <div class="element-name text-center">Roetgenium</div>
+            <div class="atomic-mass text-center">272</div>
+          </div>
+          <div class="box transition-metal">
+            <div class="atomic-number">112</div>
+            <div class="text-center element-symbol">Cn</div>
+            <div class="element-name text-center">Copernicium</div>
+            <div class="atomic-mass text-center">285</div>
+          </div>
+          <div class="box post-transition-metal">
+            <div class="atomic-number">112</div>
+            <div class="text-center element-symbol">Nh</div>
+            <div class="element-name text-center">Nihonium</div>
+            <div class="atomic-mass text-center">286</div>
+          </div>
+          <div class="box post-transition-metal">
+            <div class="atomic-number">113</div>
+            <div class="text-center element-symbol">Fl</div>
+            <div class="element-name text-center">Flerovium</div>
+            <div class="atomic-mass text-center">289</div>
+          </div>
+          <div class="box post-transition-metal">
+            <div class="atomic-number">114</div>
+            <div class="text-center element-symbol">Mc</div>
+            <div class="element-name text-center">Moscovium</div>
+            <div class="atomic-mass text-center">289</div>
+          </div>
+          <div class="box post-transition-metal">
+            <div class="atomic-number">115</div>
+            <div class="text-center element-symbol">Lv</div>
+            <div class="element-name text-center">Livermorium</div>
+            <div class="atomic-mass text-center">293</div>
+          </div>
+          <div class="box halogen">
+            <div class="atomic-number">116</div>
+            <div class="text-center element-symbol">Ts</div>
+            <div class="element-name text-center">Tennessine</div>
+            <div class="atomic-mass text-center">294</div>
+          </div>
+          <div class="box noble-gas">
+            <div class="atomic-number">117</div>
+            <div class="text-center element-symbol">Og</div>
+            <div class="element-name text-center">Oganesson</div>
+            <div class="atomic-mass text-center">294</div>
+          </div>
+        </div>
+        <section class="mt-5">
+          <div class="row">
+            <div class="empty-box"></div>
+            <div class="box lanthanoid">
+              <div class="atomic-number">57</div>
+              <div class="text-center element-symbol">La</div>
+              <div class="element-name text-center">Lanthanum</div>
+              <div class="atomic-mass text-center">138.905</div>
+            </div>
+            <div class="box lanthanoid">
+              <div class="atomic-number">58</div>
+              <div class="text-center element-symbol">Ce</div>
+              <div class="element-name text-center">Cerium</div>
+              <div class="atomic-mass text-center">140.116</div>
+            </div>
+            <div class="box lanthanoid">
+              <div class="atomic-number">59</div>
+              <div class="text-center element-symbol">Pr</div>
+              <div class="element-name text-center">Prasedymium</div>
+              <div class="atomic-mass text-center">140.908</div>
+            </div>
+            <div class="box lanthanoid">
+              <div class="atomic-number">60</div>
+              <div class="text-center element-symbol">Nd</div>
+              <div class="element-name text-center">Neodymium</div>
+              <div class="atomic-mass text-center">144.242</div>
+            </div>
+            <div class="box lanthanoid">
+              <div class="atomic-number">61</div>
+              <div class="text-center element-symbol">Pm</div>
+              <div class="element-name text-center">Promothium</div>
+              <div class="atomic-mass text-center">144</div>
+            </div>
+            <div class="box lanthanoid">
+              <div class="atomic-number">62</div>
+              <div class="text-center element-symbol">Sm</div>
+              <div class="element-name text-center">Samarium</div>
+              <div class="atomic-mass text-center">150.362</div>
+            </div>
+            <div class="box lanthanoid">
+              <div class="atomic-number">63</div>
+              <div class="text-center element-symbol">Eu</div>
+              <div class="element-name text-center">Europium</div>
+              <div class="atomic-mass text-center">151.964</div>
+            </div>
+            <div class="box lanthanoid">
+              <div class="atomic-number">64</div>
+              <div class="text-center element-symbol">Gd</div>
+              <div class="element-name text-center">Gadolinium</div>
+              <div class="atomic-mass text-center">157.253</div>
+            </div>
+            <div class="box lanthanoid">
+              <div class="atomic-number">65</div>
+              <div class="text-center element-symbol">Tb</div>
+              <div class="element-name text-center">Terbium</div>
+              <div class="atomic-mass text-center">158.925</div>
+            </div>
+            <div class="box lanthanoid">
+              <div class="atomic-number">66</div>
+              <div class="text-center element-symbol">Dy</div>
+              <div class="element-name text-center">Dysprosium</div>
+              <div class="atomic-mass text-center">162.500</div>
+            </div>
+            <div class="box lanthanoid">
+              <div class="atomic-number">67</div>
+              <div class="text-center element-symbol">Ho</div>
+              <div class="element-name text-center">Holomium</div>
+              <div class="atomic-mass text-center">164.930</div>
+            </div>
+            <div class="box lanthanoid">
+              <div class="atomic-number">68</div>
+              <div class="text-center element-symbol">Er</div>
+              <div class="element-name text-center">Erbium</div>
+              <div class="atomic-mass text-center">167.259</div>
+            </div>
+            <div class="box lanthanoid">
+              <div class="atomic-number">69</div>
+              <div class="text-center element-symbol">Tm</div>
+              <div class="element-name text-center">Thulium</div>
+              <div class="atomic-mass text-center">168.634</div>
+            </div>
+            <div class="box lanthanoid">
+              <div class="atomic-number">70</div>
+              <div class="text-center element-symbol">Yb</div>
+              <div class="element-name text-center">Ytterbium</div>
+              <div class="atomic-mass text-center">175.045</div>
+            </div>
+            <div class="box lanthanoid">
+              <div class="atomic-number">71</div>
+              <div class="text-center element-symbol">Lu</div>
+              <div class="element-name text-center">Lutetium</div>
+              <div class="atomic-mass text-center">174.967</div>
+            </div>
+
+            <div class="empty-box"></div>
+            <div class="empty-box"></div>
+          </div>
+          <div class="row">
+            <div class="empty-box"></div>
+            <div class="box actonoid">
+              <div class="atomic-number">89</div>
+              <div class="text-center element-symbol">Ac</div>
+              <div class="element-name text-center">Actium</div>
+              <div class="atomic-mass text-center">227.028</div>
+            </div>
+            <div class="box actonoid">
+              <div class="atomic-number">90</div>
+              <div class="text-center element-symbol">Th</div>
+              <div class="element-name text-center">Thorium</div>
+              <div class="atomic-mass text-center">232.038</div>
+            </div>
+            <div class="box actonoid">
+              <div class="atomic-number">91</div>
+              <div class="text-center element-symbol">Pa</div>
+              <div class="element-name text-center">Procatintium</div>
+              <div class="atomic-mass text-center">231.036</div>
+            </div>
+            <div class="box actonoid">
+              <div class="atomic-number">92</div>
+              <div class="text-center element-symbol">U</div>
+              <div class="element-name text-center">Uranium</div>
+              <div class="atomic-mass text-center">238.029</div>
+            </div>
+            <div class="box actonoid">
+              <div class="atomic-number">93</div>
+              <div class="text-center element-symbol">Np</div>
+              <div class="element-name text-center">Neptunium</div>
+              <div class="atomic-mass text-center">237.048</div>
+            </div>
+            <div class="box actonoid">
+              <div class="atomic-number">94</div>
+              <div class="text-center element-symbol">Pu</div>
+              <div class="element-name text-center">Plutonium</div>
+              <div class="atomic-mass text-center">237.028</div>
+            </div>
+            <div class="box actonoid">
+              <div class="atomic-number">95</div>
+              <div class="text-center element-symbol">Am</div>
+              <div class="element-name text-center">Americium</div>
+              <div class="atomic-mass text-center">243.061</div>
+            </div>
+            <div class="box actonoid">
+              <div class="atomic-number">96</div>
+              <div class="text-center element-symbol">Cm</div>
+              <div class="element-name text-center">Curium</div>
+              <div class="atomic-mass text-center">247.070</div>
+            </div>
+            <div class="box actonoid">
+              <div class="atomic-number">97</div>
+              <div class="text-center element-symbol">Bk</div>
+              <div class="element-name text-center">Berkelium</div>
+              <div class="atomic-mass text-center">247.070</div>
+            </div>
+            <div class="box actonoid">
+              <div class="atomic-number">98</div>
+              <div class="text-center element-symbol">Cf</div>
+              <div class="element-name text-center">Calafornium</div>
+              <div class="atomic-mass text-center">251.080</div>
+            </div>
+            <div class="box actonoid">
+              <div class="atomic-number">99</div>
+              <div class="text-center element-symbol">Es</div>
+              <div class="element-name text-center">Einsteinium</div>
+              <div class="atomic-mass text-center">252.083</div>
+            </div>
+            <div class="box actonoid">
+              <div class="atomic-number">100</div>
+              <div class="text-center element-symbol">Fm</div>
+              <div class="element-name text-center">Fermium</div>
+              <div class="atomic-mass text-center">257.095</div>
+            </div>
+            <div class="box actonoid">
+              <div class="atomic-number">101</div>
+              <div class="text-center element-symbol">Md</div>
+              <div class="element-name text-center">Mendelvium</div>
+              <div class="atomic-mass text-center">258.098</div>
+            </div>
+            <div class="box actonoid">
+              <div class="atomic-number">102</div>
+              <div class="text-center element-symbol">No</div>
+              <div class="element-name text-center">Nobelium</div>
+              <div class="atomic-mass text-center">259.101</div>
+            </div>
+            <div class="box actonoid">
+              <div class="atomic-number">103</div>
+              <div class="text-center element-symbol">Lr</div>
+              <div class="element-name text-center">Lawrencium</div>
+              <div class="atomic-mass text-center">262.110</div>
+            </div>
+
+            <div class="empty-box"></div>
+            <div class="empty-box"></div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </body>
+</html>
