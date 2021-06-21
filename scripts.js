@@ -54,7 +54,7 @@ function loadImperialStarship() {
 function loadBiographys() {
   $("#aboutme").hide();
   $("#content").show();
-  $("#content").load("biography's/biography's.html");
+  $("#content").load("biographies/biographies.html");
 }
 function loadPython() {
   $("#aboutme").hide();
